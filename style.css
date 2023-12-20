@@ -1,0 +1,93 @@
+/* Reset default styles and apply a box model for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Set the background color for the entire page */
+body {
+    background: #001e4d;
+}
+
+/* Style for the main application container */
+.app {
+    background: #fff;
+    width: 90%; /* Take up 90% of the available width */
+    max-width: 600px; /* Limit the maximum width to 600px */
+    margin: 100px auto 0; /* Center the container with top margin */
+    border-radius: 10px; /* Add rounded corners */
+    padding: 30px; /* Add internal padding */
+}
+
+/* Style for the main heading */
+.app h1 {
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333; /* Add a bottom border */
+    padding-bottom: 30px; /* Add space below the heading */
+}
+
+/* Style for the quiz section */
+.quiz {
+    padding: 20px 0; /* Add padding above and below the quiz section */
+}
+
+/* Style for the sub-heading in the quiz section */
+.quiz h2 {
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+
+/* Style for the general button */
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block; /* Make the button a block-level element */
+}
+
+/* Hover effect for the button */
+.btn:hover:not([disabled]) {
+    background: #222;
+    color: #fff;
+}
+
+/* Disable cursor on disabled buttons */
+.btn:disabled {
+    cursor: no-drop;
+}
+
+/* Style for the "Next" button */
+#next-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    text-align: center; /* Center the text */
+}
+
+/* Style for correct answer feedback */
+.correct {
+    background: #9aeabc;
+}
+
+/* Style for incorrect answer feedback */
+.incorrect {
+    background: #222;
+}
